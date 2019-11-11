@@ -1,0 +1,778 @@
+  File "web.py", line 6
+SyntaxError: Non-ASCII character '\xe4' in file web.py on line 6, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+121.32.33.132 - - [11/Nov/2019 10:10:49] "GET /detail?id=599834346713 HTTP/1.1" 200 -
+121.32.33.132 - - [11/Nov/2019 10:10:49] "GET /favicon.ico HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[标题价格] 正常的批发价
+[图片类型]
+[图片类型] 批发价
+[批发价格] 正常处理
+解析源码：[32mOK[0m
+数据库保存成功
+121.32.33.132 - - [11/Nov/2019 10:48:55] "GET /detail?id=588144826283 HTTP/1.1" 200 -
+121.32.33.132 - - [11/Nov/2019 10:48:55] "GET /favicon.ico HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 11:46:15] "GET /detail?id=588144826283 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 11:46:15] "GET /favicon.ico HTTP/1.1" 200 -
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+121.32.35.208 - - [11/Nov/2019 11:55:41] "GET /detail?id=588144826283 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 11:55:41] "GET /favicon.ico HTTP/1.1" 200 -
+47.101.58.84 - - [11/Nov/2019 12:03:02] "GET / HTTP/1.1" 200 -
+47.94.39.226 - - [11/Nov/2019 12:29:44] "GET / HTTP/1.0" 200 -
+[2019-11-11 13:49:16,537] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+27.254.86.27 - - [11/Nov/2019 13:49:16] "GET /search?kw="สินค้าแนะนำ"&page=1 HTTP/1.1" 200 -
+[2019-11-11 13:49:34,709] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+27.254.86.27 - - [11/Nov/2019 13:49:34] "GET /search?kw="สินค้าแนะนำ"&page=1 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 14:46:10] "GET /detail?id=588144826283 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 14:46:11] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:32:35,028] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:32:35] "GET /search?kw="สินค้าแนะนำ"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:32:40,664] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:32:40] "GET /search?kw="เสื้อผ้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:32:43,558] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:32:43] "GET /search?kw="รองเท้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:32:46] "GET /detail?id=588144826283 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:32:46] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:32:48,545] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:32:48] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:32:48] "GET /favicon.ico HTTP/1.1" 200 -
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-11-11 15:33:41,980] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:33:41] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:33:42] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:34:16,243] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:34:16] "GET /search?kw="รองเท้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:34:17,387] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:34:17] "GET /search?kw="รองเท้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:34:18,177] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:34:18] "GET /search?kw="รองเท้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:34:20,489] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:34:20] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:34:20] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:34:35,768] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:34:35] "GET /search?kw="รองเท้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:34:37,396] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "PiFaWang/web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:34:37] "GET /search?kw="รองเท้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-11-11 15:36:25,503] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:36:25] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:36:25] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:37:12,421] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:37:12] "GET /search?kw="เสื้อผ้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:37:13,661] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:37:13] "GET /search?kw="รองเท้าผู้หญิง"&page=1 HTTP/1.1" 200 -
+[2019-11-11 15:37:16,073] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:37:16] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:37:16] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:38:10,136] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:38:10] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:38:10] "GET /favicon.ico HTTP/1.1" 200 -
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+[2019-11-11 15:38:40,286] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    with open(log_name, 'a+') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:38:40] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:38:40] "GET /favicon.ico HTTP/1.1" 200 -
+[2019-11-11 15:39:47,432] ERROR in app: Exception on /search [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 45, in search
+    keyword = tran.th_ch(keyword)
+  File "/root/PiFaWang/tools/trans.py", line 83, in th_ch
+    log_name = '/root/PiFaWang/log/tran.log'
+FileNotFoundError: [Errno 2] No such file or directory: '/root/log/tran.log'
+121.32.35.208 - - [11/Nov/2019 15:39:47] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:39:47] "GET /favicon.ico HTTP/1.1" 200 -
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+键入了泰文，已翻译 男鞋
+/root/.virtualenvs/py3env/lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+构造URL：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+翻译中...
+翻译：[32mOK[0m
+日志已记录
+121.32.35.208 - - [11/Nov/2019 15:41:25] "GET /search?kw=รองเท้าผู้ชาย&page=3 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:41:26] "GET /favicon.ico HTTP/1.1" 200 -
+键入了泰文，已翻译 “女士袋”
+/root/.virtualenvs/py3env/lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+构造URL：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+翻译中...
+翻译：[32mOK[0m
+日志已记录
+121.32.35.208 - - [11/Nov/2019 15:41:48] "GET /search?kw="กระเป๋าผู้หญิง"&page=1 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 15:44:26,652] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+    return self.parse_html(url, id)
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    prices = get_price(html) # 两种提取规则， 1、起批量 2、范围价格
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 15:44:26] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 15:44:58,248] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+    return self.parse_html(url, id)
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    prices = get_price(html) # 两种提取规则， 1、起批量 2、范围价格
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 15:44:58] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 15:44:58] "GET /favicon.ico HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 15:45:48,538] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+    return self.parse_html(url, id)
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    prices = get_price(html) # 两种提取规则， 1、起批量 2、范围价格
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 15:45:48] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 15:47:25,637] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    spics = get_shop_spic_two(html)  # 宣传栏图片 （固定）
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 15:47:25] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 15:48:07,586] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    spics = get_shop_spic_two(html)  # 宣传栏图片 （固定）
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 15:48:07] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[标题价格] 正常的批发价
+[图片类型]
+[图片类型] 批发价
+[批发价格] 正常处理
+解析源码：[32mOK[0m
+数据库保存成功
+121.32.35.208 - - [11/Nov/2019 16:04:38] "GET /detail?id=605065138360 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 16:04:39] "GET /favicon.ico HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 16:10:48,747] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+    item = eval(item)
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    title = get_shop_title_two(html) # 商品名称 （固定）
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 16:10:48] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[2019-11-11 16:10:51,599] ERROR in app: Exception on /detail [GET]
+Traceback (most recent call last):
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/root/.virtualenvs/py3env/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "web.py", line 101, in detail
+    result = spider.main(id=id)
+  File "/root/PiFaWang/tools/detail.py", line 153, in main
+    item = eval(item)
+  File "/root/PiFaWang/tools/detail.py", line 112, in parse_html
+    title = get_shop_title_two(html) # 商品名称 （固定）
+  File "/root/PiFaWang/tools/parse.py", line 838, in get_price
+    result = get_json(html)
+  File "/root/PiFaWang/tools/parse.py", line 66, in get_json
+    s = re.findall('"sku".*?{(.*?)};', html, re.S)[0]
+IndexError: list index out of range
+121.32.35.208 - - [11/Nov/2019 16:10:51] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+键入了泰文，已翻译 女人的鞋
+/root/.virtualenvs/py3env/lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+键入了泰文，已翻译 男人的衣服
+/root/.virtualenvs/py3env/lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+键入了泰文，已翻译 男人的衣服
+/root/.virtualenvs/py3env/lib/python3.6/site-packages/selenium/webdriver/phantomjs/webdriver.py:49: UserWarning: Selenium support for PhantomJS has been deprecated, please use headless versions of Chrome or Firefox instead
+  warnings.warn('Selenium support for PhantomJS has been deprecated, please use headless '
+构造URL：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+翻译中...
+构造URL：[32mOK[0m
+翻译：[32mOK[0m
+日志已记录
+121.32.35.208 - - [11/Nov/2019 16:11:07] "GET /search?kw="รองเท้าผู้หญิง"&page=1 HTTP/1.1" 200 -
+构造URL：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+获取一级页面源码：[32mOK[0m
+翻译中...
+获取一级页面源码：[32mOK[0m
+翻译中...
+翻译：[32mOK[0m
+日志已记录
+121.32.35.208 - - [11/Nov/2019 16:11:12] "GET /search?kw="เสื้อผ้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+翻译：[32mOK[0m
+日志已记录
+121.32.35.208 - - [11/Nov/2019 16:11:12] "GET /search?kw="เสื้อผ้าผู้ชาย"&page=1 HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[标题价格] 正常的批发价
+[图片类型]
+[图片类型] 批发价
+[批发价格] 正常处理
+解析源码：[32mOK[0m
+数据库保存成功
+121.32.35.208 - - [11/Nov/2019 16:16:49] "GET /detail?id=584115616495 HTTP/1.1" 200 -
+ * Serving Flask app "web" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:5000/ (Press CTRL+C to quit)
+正在请求二级页面
+获取源码：[32mOK[0m
+121.32.35.208 - - [11/Nov/2019 16:48:39] "GET /detail?id=594538886502 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 16:48:39] "GET /favicon.ico HTTP/1.1" 200 -
+正在请求二级页面
+获取源码：[32mOK[0m
+[标题价格] 正常的范围价
+[图片类型]
+[图片类型] 范围价
+正常处理
+解析源码：[32mOK[0m
+数据库保存成功
+121.32.35.208 - - [11/Nov/2019 16:53:31] "GET /detail?id=598069701886 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 16:53:31] "GET /favicon.ico HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 17:02:07] "GET /favicon.ico HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 17:02:13] "GET /favicon.ico HTTP/1.1" 200 -
+106.15.52.246 - - [11/Nov/2019 17:33:40] code 400, message Bad request version ('\x00\x01\x97|\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00')
+106.15.52.246 - - [11/Nov/2019 17:33:40] "  (rþ          |                    " HTTPStatus.BAD_REQUEST -
+正在请求二级页面
+获取源码：[32mOK[0m
+[标题价格] 特殊的批发价
+[图片类型]
+[折扣价] 批发价
+[批发价] 正常处理
+解析源码：[32mOK[0m
+数据库保存成功
+121.32.35.208 - - [11/Nov/2019 17:46:35] "GET /detail?id=598670288253 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 17:46:36] "GET /favicon.ico HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 18:06:46] "GET /detail?id=598670288253 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 18:06:46] "GET /favicon.ico HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 18:22:34] "GET /detail?id=584115616495 HTTP/1.1" 200 -
+80.82.67.141 - - [11/Nov/2019 18:26:40] "GET / HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 18:29:58] "GET /detail?id=584115616495 HTTP/1.1" 200 -
+121.32.35.208 - - [11/Nov/2019 18:29:58] "GET /favicon.ico HTTP/1.1" 200 -

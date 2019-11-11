@@ -1,0 +1,8 @@
+Flask==1.1.1
+Jinja2==2.10.3
+lxml==4.4.1
+PyMySQL==0.9.3
+redis==3.3.11
+requests==2.22.0
+selenium==3.141.0
+service-identity==18.1.0
